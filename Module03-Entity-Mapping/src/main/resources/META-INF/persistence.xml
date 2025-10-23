@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+
+    <persistence-unit name="jpa-config">
+        <!--    section01    -->
+        <class>com.ohgiraffers.chap01.section01.model.Order</class>
+        <class>com.ohgiraffers.chap01.section01.model.Customer</class>
+        <!--    section02    -->
+        <class>com.ohgiraffers.chap01.section02.model.Customer</class>
+        <class>com.ohgiraffers.chap01.section02.model.Order</class>
+        <!--    section03    -->
+        <class>com.ohgiraffers.chap01.section03.model.Order</class>
+        <class>com.ohgiraffers.chap01.section03.model.Delivery</class>
+
+        <!-- serction04 -->
+        <class>com.ohgiraffers.chap01.section04.model.Delivery</class>
+        <class>com.ohgiraffers.chap01.section04.model.Customer</class>
+        <class>com.ohgiraffers.chap01.section04.model.Order</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_lecture"/>
+            <property name="jakarta.persistence.jdbc.user" value="gorilla"/>
+            <property name="jakarta.persistence.jdbc.password" value="gorilla"/>
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hdm2ddl.auto" value="none"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
