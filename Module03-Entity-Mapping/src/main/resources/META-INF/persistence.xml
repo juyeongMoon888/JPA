@@ -17,6 +17,10 @@
         <class>com.ohgiraffers.chap01.section04.model.Customer</class>
         <class>com.ohgiraffers.chap01.section04.model.Order</class>
 
+        <!--mission-->
+        <class>com.ohgiraffers.chap01.mission.a_basic.Post</class>
+        <class>com.ohgiraffers.chap01.mission.a_basic.Comment</class>
+
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_lecture"/>
@@ -25,7 +29,7 @@
 
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hdm2ddl.auto" value="none"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
 
