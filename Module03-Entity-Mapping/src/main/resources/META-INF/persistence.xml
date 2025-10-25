@@ -20,6 +20,8 @@
         <!--mission-->
         <class>com.ohgiraffers.chap01.mission.a_basic.Post</class>
         <class>com.ohgiraffers.chap01.mission.a_basic.Comment</class>
+        <class>com.ohgiraffers.chap01.mission.b_middle.Player</class>
+        <class>com.ohgiraffers.chap01.mission.b_middle.Team</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
