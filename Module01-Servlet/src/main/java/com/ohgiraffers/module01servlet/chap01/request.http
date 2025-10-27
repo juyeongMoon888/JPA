@@ -1,0 +1,5 @@
+@baseUrl = 
+@contentType = application/json
+
+
+POST {{baseUrl}}/life-cycle
