@@ -1,0 +1,11 @@
+package com.ohgiraffers.chap01.section02.service;
+
+public class NaverPayGateway implements PaymentsInterface{
+
+    @Override
+    public boolean processPayment(String orderId, double amount) {
+        System.out.println("네이버 페이 결제 시작: 주문 번호 = " + orderId + ", 주문 금액 = " + amount);
+
+        return true;
+    }
+}
